@@ -1,0 +1,142 @@
+:root {
+  --orange-500: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--grey-950);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--grey-900);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 410px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rating-state,
+.thank-you-state {
+  display: flex;
+  flex-direction: column;
+}
+
+.thank-you-state {
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.star-icon {
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--grey-500);
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.rating-btn {
+  background-color: hsl(213, 19%, 23%);
+  color: var(--grey-500);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rating-btn:hover {
+  background-color: var(--orange-500);
+  color: var(--white);
+}
+
+.rating-btn.active {
+  background-color: var(--grey-500);
+  color: var(--white);
+}
+
+.submit-btn {
+  background-color: var(--orange-500);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange-500);
+}
+
+.selected-rating {
+  background-color: hsl(213, 19%, 23%);
+  color: var(--orange-500);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .card {
+    padding: 2rem;
+    max-width: 410px;
+    border-radius: 30px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .rating-btn {
+    width: 50px;
+    height: 50px;
+  }
+}

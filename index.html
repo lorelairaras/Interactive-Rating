@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-<body>
-  <!-- Rating state start -->
- <h1>How did we do?</h1>
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <div class="rating-buttons">
-        <button class="rating-btn" value="1">1</button>
-        <button class="rating-btn" value="2">2</button>
-        <button class="rating-btn" value="3">3</button>
-        <button class="rating-btn" value="4">4</button>
-        <button class="rating-btn" value="5">5</button>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="card">
+      <!-- Rating state start -->
+      <div class="rating-state">
+        <div class="star-icon">
+          <img src="images/icon-star.svg" alt="Star Icon" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-buttons">
+          <button class="rating-btn" value="1">1</button>
+          <button class="rating-btn" value="2">2</button>
+          <button class="rating-btn" value="3">3</button>
+          <button class="rating-btn" value="4">4</button>
+          <button class="rating-btn" value="5">5</button>
+        </div>
+        <button class="submit-btn">Submit</button>
       </div>
-      <button class="submit-btn">Submit</button>
-    </div>
-    <!-- Rating state end -->
+      <!-- Rating state end -->
 
-    <!-- Thank you state start -->
-    <div class="thank-you-state">
-      <img src="images/illustration-thank-you.svg" alt="Thank you illustration" width="150">
-      <div class="selected-rating">You selected <span id="rating-value">4</span> out of 5</div>
-      <h1>Thank you!</h1>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      <!-- Thank you state start -->
+      <div class="thank-you-state">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+          width="150"
+        />
+        <div class="selected-rating">
+          You selected <span id="rating-value">4</span> out of 5
+        </div>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
     </div>
-    <!-- Thank you state end -->
-  </div>
-</body>
+  </body>
 </html>
