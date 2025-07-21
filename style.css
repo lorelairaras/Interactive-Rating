@@ -93,8 +93,8 @@ p {
 }
 
 .rating-btn.active {
-  background-color: var(--grey-500);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--orange-500);
 }
 
 .submit-btn {
