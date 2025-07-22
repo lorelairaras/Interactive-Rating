@@ -29,7 +29,7 @@ body {
   background-color: var(--grey-900);
   border-radius: 20px;
   padding: 2rem;
-  max-width: 410px;
+  max-width: 400px;
   width: 100%;
   margin: 0 auto;
 }
@@ -99,7 +99,7 @@ p {
 
 .submit-btn {
   background-color: var(--orange-500);
-  color: var(--white);
+  color: var(--grey-950);
   border: none;
   border-radius: 25px;
   padding: 0.8rem;
@@ -127,12 +127,12 @@ p {
 @media (min-width: 768px) {
   .card {
     padding: 2rem;
-    max-width: 410px;
+    max-width: 400px;
     border-radius: 30px;
   }
 
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .rating-btn {
